@@ -64,9 +64,10 @@ color: rgb(0,0,0);
 
 .cover {
   position: relative;
-  padding:0px 0px;
+  padding:0;
   margin-top: 65px;
-  background-image: url(../images/cover.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -74,9 +75,11 @@ color: rgb(0,0,0);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1100px;
+  width: 100%;
+  max-width: 1100px;
   height: 757px;
-  
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .cover_title {
   color:rgb(255, 255, 255);
@@ -85,6 +88,8 @@ color: rgb(0,0,0);
   line-height: 115%;
   letter-spacing: 30px;
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
   text-transform: uppercase;
   flex-direction: column;
   text-align: center;
@@ -96,20 +101,26 @@ color: rgb(0,0,0);
   justify-content: center;
 }
 .text_left {
+  width: 100%;
+  box-sizing: border-box;
   display:inline-block;
   text-align:left;
   transform: translateX(50px) translateY(-40px);
   
 }
 .text_center {
+  width: 100%;
+  box-sizing: border-box;
   display: inline-block;
   text-align: center;
   transform: translateX(17px) translateY(-20px);
 }
 .text_right {
+  width: 100%;
+  box-sizing: border-box;
   display: inline-block;
   text-align: right;
-  transform: translateX(-18px);
+margin-left: -18px;
 }
 .cover_description {
   display: flex;
@@ -254,7 +265,7 @@ justify-content: center;
 align-items: center;
 }
 .about_logo {
-  margin-top: -75px;
+margin-top: -75px;
  width:240px;
  height:240px;
 }
