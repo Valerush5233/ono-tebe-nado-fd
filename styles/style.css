@@ -3,9 +3,8 @@
   width:100%;
   margin:auto;
 }
-.body {
-  margin: 0;
-  
+ .body {
+  margin: 0; 
 }
 header {
   position: relative;
@@ -320,7 +319,7 @@ transform: translateY(54px) translateX(35px);
   margin-bottom: 24px;
 }
 .footer {
-  padding: 0px ;
+  padding-bottom: 50px ;
 }
 .footer_address {
   display: grid;
