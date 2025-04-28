@@ -22,7 +22,6 @@ padding-right: 7px;
 .header_logo {
   width: 129.11px;
   height: 104.65px;
-  height: auto;
   display: block;
 }
 .header_item_active {
@@ -80,22 +79,22 @@ top: 0;
   letter-spacing: 30px;
 }
 .text_center {
-align-self: center;
-text-align: center;
-letter-spacing: 60px;
-font-size: 100px;
-font-weight: 700;
-line-height: 100%;
-letter-spacing: 30px;
+ align-self: center;
+ text-align: center;
+ letter-spacing: 60px;
+ font-size: 100px;
+ font-weight: 700;
+ line-height: 100%;
+ letter-spacing: 30px;
 }
 .text_right {
-align-self: flex-end;
-text-align: right;
-letter-spacing: 60px;
-font-size: 100px;
-font-weight: 700;
-line-height: 100%;
-letter-spacing: 30px;
+ align-self: flex-end;
+ text-align: right;
+ letter-spacing: 60px;
+ font-size: 100px;
+ font-weight: 700;
+ line-height: 100%;
+ letter-spacing: 30px;
 }
 .cover_description {
   display: flex;
@@ -219,7 +218,7 @@ padding: 34px 24px 0px 24px;
   display:flex;
   flex-direction: column;
   padding-top: 75px;
-  gap: 24px; 
+  gap: 24px;
 }
 .about_title {
   color: rgb(0, 0, 0);
