@@ -1,365 +1,284 @@
-* {
-  box-sizing: border-box;
-  width:100%;
-  margin:auto;
-}
- .body {
-  margin: 0; 
-}
-header {
-  position: relative;
- margin-top: 72px;
+.header {
  display: grid;
  grid-template-columns: 1fr min-content 1fr;
  align-items: center;
- padding:20px;
+ padding: 92px 24px 92px 24px;
 }
-.header_links-list-item:first-child {
- margin-right: -80px;
- margin-left: 27px;
+.header_menu {
+  display: flex;
+  justify-self: center;
 }
-.header_links-list {
+.header_links-list-item {
+font-size: 18px;
+font-weight: 400;
+text-underline-offset: 4px;
+}
+.header_links {
 list-style: circle;
 display: flex;
-gap: 30px;
-white-space: nowrap;
-transform: translateY(-5px);
-}
-.header_phone {
-text-decoration: underline;
-text-underline-offset: 4px;
-}
-.header_email {
-text-decoration: underline;
-text-underline-offset: 4px;
-}
-.header_item_active {
-  list-style: none;
-}
-.header_link {
-  font-size: 18px;
-  font-weight: 400;
-color: rgb(0,0,0);
+gap: 32px;
+padding-right: 7px;
 }
 .header_logo {
-  display: block;
-  width: 140px;
-  height: 115px;
-}
-.header_logo img {
-  width:100%;
+  width: 129.11px;
+  height: 104.65px;
   height: auto;
+  display: block;
 }
- .header_contacts {
-  position: relative;
-  width: 240px;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  line-height: 1.4;
+.header_item_active {
+  list-style-type: none;
+}
+.header_link-main {
+text-decoration: none;
+}
+.address {
+font-size: 18px;
+line-height: 24.3px;
+letter-spacing: 0%;
+list-style-type: none;
+padding-left: 185px;
  } 
-
 .cover {
   position: relative;
-  padding:0;
-  margin-top: 65px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url(../images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1100px;
-  height: 757px;
-  box-sizing: border-box;
-  overflow: hidden;
+  text-transform: uppercase;
+  z-index: 0;
+  color: rgb(255, 255, 255);
 }
 .cover_title {
-  color:rgb(255, 255, 255);
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 115%;
-  letter-spacing: 30px;
   display: flex;
-  width: 100%;
-  box-sizing: border-box;
-  text-transform: uppercase;
   flex-direction: column;
   text-align: center;
+  padding: 177px 50px 147px 50px;
+  gap: 20px;
 }
-.cover_overlay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.overlay {
+ position: absolute;
+top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background-color: rgba(0, 0, 0, 0.6);
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+}
+.text_cover {
+  align-self: flex-start;
+  line-height: 115%;
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 60px;
 }
 .text_left {
-  width: 100%;
-  box-sizing: border-box;
-  display:inline-block;
-  text-align:left;
-  transform: translateX(50px) translateY(-40px);
-  
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 30px;
 }
 .text_center {
-  width: 100%;
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-  transform: translateX(17px) translateY(-20px);
+align-self: center;
+text-align: center;
+letter-spacing: 60px;
+font-size: 100px;
+font-weight: 700;
+line-height: 100%;
+letter-spacing: 30px;
 }
 .text_right {
-  width: 100%;
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: right;
-margin-left: -18px;
+align-self: flex-end;
+text-align: right;
+letter-spacing: 60px;
+font-size: 100px;
+font-weight: 700;
+line-height: 100%;
+letter-spacing: 30px;
 }
 .cover_description {
   display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  
-  color: rgb(255, 255, 255);
-  margin-bottom: 50px;
-  width: 1000px;
-  height: 51px;
+  align-items: baseline;
+  justify-content: space-evenly;
+  gap: 79px;
+  padding: 0px 50px 55px 78px;
 }
 .cover_text {
-  text-transform: uppercase;
   word-spacing: 18px;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  margin: 0;
 }
-.bet_button {
+.button {
   background: transparent;
   border: 1px solid white;
-  padding:12px 30px;
-  text-transform: uppercase;
-  display: inline-block;
-  width: auto;
+  width: 256px;
+  height: 51px;
   color: rgb(255, 255, 255);
-  white-space: nowrap;
-font-size: 22px;
-line-height: 26px;
-font-weight: 500;
-}
-.lots {
-  padding: 94px 24px 0px 24px;
+  text-align: center;
+ font-size: 22px;
+ line-height: 51px;
+ font-weight: 500;
 }
 .lots_title {
-  display: inline-block;
-  transform: translateY(-8px);
-  width: 121px;
-  height: 47px;
-  text-transform: uppercase;
-  margin-left: 40px;
-  margin-top: 95px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 47px;
+ padding-top: 190px;
+ padding-bottom: 15px;
+ padding-left: 64px;
+ color: rgb(0, 0, 0);
+ font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
 }
-.lots_list {
+.lots_container {
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap:25px;
-  list-style: none;
-  margin: 0;
+  list-style-type: none;
+  margin: 0 auto;
   padding: 0;
   flex-wrap: wrap;
-}
-.lots_item {
-  width: 334px;
-  min-height: 400px;
-  box-sizing: border-box;
-}
-.lots_link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
+  margin-left: 20px;
 }
 .lots_card {
+  max-width: 334px;
+  min-height: 595px;
+  flex-grow: 1;
+}
+.card {
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box;
-  position:relative;
-  overflow: hidden;
-  width: 334px;
-  height: 596px;
-  color: rgb(255, 255, 255);
-  top:20px;
- 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  padding: 51px 40px 48px 40px;
 }
-.lots_card_title {
-  text-decoration: underline;
-  text-transform: uppercase;
-  position: absolute;
-  margin:0;
-  z-index: 2;
+.card_left {
+  background-image: url(../images/card-lot-01.jpg);
+}
+.card_middle {
+  background-image: url(../images/card-lot-02.jpg);
+}
+.card_right {
+  background-image: url(../images/card-lot-03.jpg);
+}
+.card_title {
   font-size: 22px;
   font-weight: 700;
   line-height: 120%;
-  top: 48px;
-  left: 40px;
-  right: 48px;
-  max-width: 254px;
+  letter-spacing: 0%;
+ color: rgb(255, 255, 255);
+ text-transform: uppercase;
+ text-decoration: underline;
 }
-.lots_card_description {
-  text-decoration: none ;
-  position: absolute;
-  max-width: 254px;
-  max-height: 596px;
-  bottom: 48px;
-  left:40px;
-  right:40px;
-  z-index: 2;
-  margin:0;
+.text_card {
+ color: rgb(255, 255, 255);
+ font-size: 20px;
+ font-weight: 400;
+ line-height: 120%;
+ letter-spacing: 0%;
+}
+.about_more {
+  display: block;
   font-size: 20px;
   font-weight: 400;
-  line-height: 120%;
-}
-.lots_card img {
-  object-fit:cover;
-  width:334px;
-  height: 596px;
-  display:block;
-}
-.lots_more {
-  position: relative;
-  top: 50px;
-  left:40px;
-  font-size: 20px;
-  font-weight: 400;
-  
-}
-.card_overlay {
-  position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  z-index: 1;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-underline-offset :3px;
+  padding-top: 30px;
+  margin-left: 64px;
 }
 .about {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap:40px;
-  align-items: center;
-  padding: 1px 24px 250px 70px;
+margin-top: 148px;
 }
 .about_column {
-display: flex;
-justify-content: center;
-align-items: center;
+display: grid;
+grid-template-columns: 359px repeat(1, 1fr);
+gap: 25px;
+padding: 34px 24px 0px 24px;
 }
 .about_logo {
-margin-top: -75px;
- width:240px;
- height:240px;
-}
-.about_logo-background {
-  width: 240px;
-  height: 240px;
-  background-color:rgb(0, 0, 0);
-  border-radius:50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ justify-self: center;
+ background-color: rgb(0, 0, 0);
+ border-radius: 50%;
+ width: 240px;
+ height: 240px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .about_logo-image {
-  width: 65%;
-  height: auto;
+  width: 141.54px;
+  height: 112.55px;
 }
 .about_content {
   display:flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 250px;
+  padding-top: 75px;
+  gap: 24px; 
 }
 .about_title {
+  color: rgb(0, 0, 0);
   font-size: 40px;
   font-weight: 700;
+  line-height: 47px;
   text-transform: uppercase;
-  transform: translateY(6px) translateX(35px);
+  margin-bottom: 80px;
 }
 .about_text {
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0%;
-padding-top: 50px;
-padding-right: 50px;
-transform: translateY(54px) translateX(35px);
-}
-.about_more {
-  display: block;
-  margin-top: 50px;
-  margin-left: 65px;
- font-size: 20px;
- font-weight: 400;
- line-height: 23px;
- letter-spacing: 0%;
-}
-.about_text + .about_text {
-  margin-top: -50px;
-}
-.about_text:first-of-type {
-  margin-bottom: 24px;
+  align-self: flex-start;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
 }
 .footer {
-  padding-bottom: 50px ;
-}
-.footer_address {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  margin-top: -15px;
+  align-items: flex-start;
+  padding: 180px 50px 88px 50px;
+  gap: 140px;
 }
-.footer_contacts {
-  display: flex;
-  flex-direction: column;
+.footer_address {
+  color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 400;
-  padding-left: 51px;
+  line-height: 24.3px;
+  letter-spacing: 0%;
 }
-.footer_nav {
-  text-align: center;
+.address_location {
+  font-size: 18px;
+  line-height: 24.3px;
+  list-style-type: none;
 }
 .footer_menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  padding-left: 35px;
 }
-.footer_menu_link {
-  text-decoration: underline;
+.footer_menu-links {
+  list-style-type: none;
+  text-underline-offset: 3px;
+}
+.footer_links {
+  color: rgb(0, 0, 0);
+  text-align: center;
   font-size: 18px;
   font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
 }
-.footer_menu_item:first-child .footer_menu_link {
+.footer_main {
   text-decoration: none;
+}
+.footer_social_link {
+  width: 48px;
+  height: 48px;
 }
 .footer_socials {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 0px;
-}
-.footer_social_link {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 48px;
-  height: 48px;
+  gap: 48px;
 }
